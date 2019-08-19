@@ -106,7 +106,7 @@ module Jekyll
                  elsif page["last_modified_at"]
                    page["last_modified_at"].to_liquid
                  else
-                   page["date"]
+                   false
                  end
           filters.date_to_xmlschema(date) if date
         end
